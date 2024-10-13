@@ -1,28 +1,24 @@
 //script
-const btnAddName = document.querySelector("#addName");
-const btnAddSure = document.querySelector("#addSure");
-const tableShow = document.getElementById("tableList");
+const btnAddName = document.querySelector("#btnAddName");
+const btnAddSure = document.querySelector("#addSureName");
+const tableShow = document.getElementById("tableBody");
+const tableShow2 = document.getElementById("tableBody-2");
 
 btnAddName.addEventListener("click", function () {
-  const newRow = document.createElement("tr");
-  const userName = prompt("Enter Your Name Only:");
-
-  newRow.innerHTML = `
-  
-  <td><ul><li>${userName}</li></ul></td>
-
+  const rowNewTable = document.createElement("tr");
+  const dataCall = prompt("Enter Your First Name:");
+  rowNewTable.innerHTML = `
+    <td><ul  style="list-style-type:circle"><li class="listGap">${dataCall}</li></ul></td>
   `;
-  tableShow.appendChild(newRow);
+  tableShow.appendChild(rowNewTable);
+});
 
-  btnAddSure.addEventListener("click", () => {
-    const newRow = document.createElement("tr");
-    const userSure = prompt("Enter Your Sure Name Only:");
+btnAddSure.addEventListener("click", function () {
+  const rowNewTable = document.createElement("tr");
+  const dataCall = prompt("Enter Your Last Name:");
 
-    newRow.innerHTML = `
-    
-    <td><ul><li>${userSure}</li></ul></td>
-  
-    `;
-    tableShow.appendChild(newRow);
-  });
+  rowNewTable.innerHTML = ` <td> <ul  style="list-style-type:circle"><li class="listGap">${dataCall} </li></ul> </td>`;
+
+  tableShow2.appendChild(rowNewTable);
+
 });
