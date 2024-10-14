@@ -1,5 +1,7 @@
 //  --- What I Learn
 
+// Target month to leran this core javascript
+
 //Varible
 //Data Types
 //Convertion Data
