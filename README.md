@@ -1,7 +1,4 @@
-# javascript-core
-
-
-# JavaScript Learning Roadmap
+#JavaScript-Core - JavaScript Learning Roadmap
 
 ## Table of Contents
 1. [Basics](#1-basics)
