@@ -28,8 +28,12 @@ letter.forEach((item)=>{
     if(count[item]){
         count[item]++
     }else{
-        count[item]+1
+        count[item]=1
     }
 })
 
-console.log(count)
+// console.log(count);
+
+
+// ====
+
