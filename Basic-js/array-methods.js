@@ -20,7 +20,7 @@ function numberArr(item, index){
 // ====
 
 
-const letter = ["a","b","c","d","s","f","g","s"]
+const letter = ["a","b","a","b","c","d","a"]
 
 let count = {}
 
@@ -32,7 +32,7 @@ letter.forEach((item)=>{
     }
 })
 
-// console.log(count);
+console.log(count);
 
 
 // ====
