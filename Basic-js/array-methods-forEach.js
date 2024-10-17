@@ -39,10 +39,9 @@ letter.forEach((item)=>{
 
 const numbers = [1,2,3,4,5,6,7,8,9,10];
 
-const displayMutiply = numbers.forEach(function(mutiply){
-    return mutiply * 2
-})
+numbers.forEach(numbersMutiply)
 
-console.log(displayMutiply(2))
-
+function numbersMutiply(mutiply){
+    console.log(mutiply * 2);
+}
 
