@@ -30,4 +30,5 @@ const totalProductsPrice = products.map(function (item) {
   return item.price * item.quantity;
 });
 
-console.log(totalProductsPrice);
+console.log("Yusuf Shaikh");
+
