@@ -45,3 +45,4 @@ function numbersMutiply(mutiply){
     console.log(mutiply * 2);
 }
 
+console.log(numbers)
