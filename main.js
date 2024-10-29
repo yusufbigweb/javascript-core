@@ -73,11 +73,14 @@ const c = {
     name: 'arman'
 }
 
+console.log(a[c])
+
+
 a[c] = {
     name: "Rahul"
 }
+
+
 a[b] = {
     name: "Rehan"
 }
-
-console.log(a[c])
