@@ -22,7 +22,7 @@
 // ====== Basic
 
 //  1. String Manipulation - (length, slice(), substring(), replace(), etc.)
-//  2. Array Methods Like - (push(), pop(), shift(), unshift(), map(), filter(), etc.) 
+//  2. Array Methods Like - (push(), pop(), shift(), unshift(), map(), filter(), etc.)
 
 // ====== Control Flow
 
@@ -52,5 +52,32 @@
 // ===== DOM Manipulation
 
 
-console.log('A' -1);
-console.log('yusuf' + '100')
+//this are simple interviwe quetions
+// console.log("A" - 1);
+// console.log("yusuf" + "100");
+// console.log('2' + 2 + '2');
+// console.log('2' + 2 - '2');
+
+
+//Concept of Object of Object
+
+
+
+const a = {}
+
+const b = {
+    name: "yusuf"
+}
+
+const c = {
+    name: 'arman'
+}
+
+a[b] = {
+    name: "Rehan"
+}
+
+a[c] = {
+    name: "Rahul"
+}
+console.log(a[c])
