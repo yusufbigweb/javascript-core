@@ -52,3 +52,5 @@
 // ===== DOM Manipulation
 
 
+console.log('A' -1);
+console.log('yusuf' + '100')
