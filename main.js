@@ -63,24 +63,40 @@
 
 
 
-const a = {}
+// const a = {}
 
-const b = {
-    name: "yusuf"
-}
+// const b = {
+//     name: "yusuf"
+// }
 
-const c = {
-    name: 'arman'
-}
+// const c = {
+//     name: 'arman'
+// }
 
-console.log(a[c])
-
-
-a[c] = {
-    name: "Rahul"
-}
+// console.log(a[c])
 
 
-a[b] = {
-    name: "Rehan"
-}
+// a[c] = {
+//     name: "Rahul"
+// }
+
+
+// a[b] = {
+//     name: "Rehan"
+// }
+
+
+
+
+
+
+
+const y = "ysuf"
+const z = false
+
+console.log(y == z)//fal
+console.log(y === z)//tr
+
+
+
+const araa = [1,2,3,4,5,6]
