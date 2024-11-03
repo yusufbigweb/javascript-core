@@ -91,13 +91,19 @@
 
 
 
-const y = "ysuf"
-const z = false
+// const y = "ysuf"
+// const z = false
 
-console.log(y == z)//fal
-console.log(y === z)//tr
+// console.log(y == z)//fal
+// console.log(y === z)//tr
 
 
 
-const araa = [1,2,3,4,5,6]
-console.log(araa)
+const ara = [1,2,3,4,5,6]
+const result = ara.map((e)=>{
+    return e<=2;
+})
+console.log(result)
+
+
+document.write("Yusuf")
