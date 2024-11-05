@@ -106,4 +106,4 @@ const result = ara.map((e)=>{
 console.log(result)
 
 
-document.write("Yusuf")
+document.write("Yusuf shaikh")
