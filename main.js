@@ -110,7 +110,11 @@ const yearlyUserData = monthlyUserData * 12;
 const totalUser1Amount = monthlyUserData + yearlyUserData;
 
 showData.addEventListener("click", function () {
-  showUserData.innerHTML = `
+
+    
+    if(){
+
+        showUserData.innerHTML = `
     <div class="used-data-continer">
     <h4>User Data:</h4>
     <div class="record-storage">
@@ -132,6 +136,11 @@ showData.addEventListener("click", function () {
     </div>
     </div>
     `;
+
+    }
+
+  
+
 });
 
 // User 2
@@ -180,6 +189,9 @@ const yearlyUserData3 = monthlyUserData3 * 12;
 const totalUser1Amount3 = monthlyUserData3 + yearlyUserData3;
 
 showData3.addEventListener("click", function () {
+
+
+
   showUserData3.innerHTML = `
     <div class="used-data-continer">
     <h4>User Data:</h4>
@@ -202,4 +214,9 @@ showData3.addEventListener("click", function () {
     </div>
     </div>
     `;
+
+
+
 });
+
+
