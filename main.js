@@ -87,6 +87,7 @@
 
 const showData = document.querySelector(".btn1");
 const showUserData = document.querySelector(".client-data-used");
+const closeBtn = document.querySelector('.btn1-close')
 
 const user1 = {
   diskUsageCost: 47500,
@@ -111,12 +112,9 @@ const totalUser1Amount = monthlyUserData + yearlyUserData;
 
 showData.addEventListener("click", function () {
 
-    
-    if(){
-
-        showUserData.innerHTML = `
+  const show1 = showUserData.innerHTML = `
     <div class="used-data-continer">
-    <h4>User Data:</h4>
+    <h4 class="haeding4">User Data:</h4>
     <div class="record-storage">
     <div class="storage">
     <b>User Disk Usage</b><br><br>
@@ -137,17 +135,40 @@ showData.addEventListener("click", function () {
     </div>
     `;
 
-    }
+    // const returnAgain =  document.createElement('showUserData')
+    // const btnAgain = document.querySelector(".btn1")
+    // returnAgain.appendChild(returnAgain)
+    
+  showUserData.style.display="block";
+
 
   
-
+// showData.addEventListener('click', function(){
+//   showUserData
+// })
 });
+
+// closeBtn.addEventListener('click', function(){
+//   showUserData.remove();
+// })
+
+closeBtn.addEventListener('click', function(){
+  showUserData.style.display="none"
+})
+
+
+
+
+
+
+
+
 
 // User 2
 
 const showData2 = document.querySelector(".btn2");
 const showUserData2 = document.querySelector(".client-data-used2");
-
+const closeBtn2 = document.querySelector('.btn2-close')
 const monthlyUserData2 =
   user2.diskUsage + user2.bandwidthUsage + user2.serviceCost;
 const yearlyUserData2 = monthlyUserData2 * 12;
@@ -156,7 +177,7 @@ const totalUser1Amount2 = monthlyUserData2 + yearlyUserData2;
 showData2.addEventListener("click", function () {
   showUserData2.innerHTML = `
     <div class="used-data-continer">
-    <h4>User Data:</h4>
+    <h4 class="haeding4">User Data:</h4>
     <div class="record-storage">
     <div class="storage">
     <b>User Disk Usage</b><br><br>
@@ -176,13 +197,22 @@ showData2.addEventListener("click", function () {
     </div>
     </div>
     `;
+
+    showUserData2.style.display="block"
+
 });
+
+
+closeBtn2.addEventListener('click', function(){
+  showUserData2.style.display="none"
+})
+
 
 // User 3
 
 const showData3 = document.querySelector(".btn3");
 const showUserData3 = document.querySelector(".client-data-used3");
-
+const closeBtn3 = document.querySelector('.btn3-close')
 const monthlyUserData3 =
   user3.serviceCost + user3.bandwidthUsage + user3.diskUsage;
 const yearlyUserData3 = monthlyUserData3 * 12;
@@ -194,7 +224,7 @@ showData3.addEventListener("click", function () {
 
   showUserData3.innerHTML = `
     <div class="used-data-continer">
-    <h4>User Data:</h4>
+    <h4 class="haeding4">User Data:</h4>
     <div class="record-storage">
     <div class="storage">
     <b>User Disk Usage</b><br><br>
@@ -215,8 +245,11 @@ showData3.addEventListener("click", function () {
     </div>
     `;
 
-
+    showUserData3.style.display="block"
 
 });
 
+closeBtn3.addEventListener('click', function(){
+  showUserData3.style.display = "none"
+})
 
