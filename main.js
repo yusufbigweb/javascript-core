@@ -119,7 +119,7 @@ const user3 = {
 
 
 
-console.log(user1.diskUsageCost + user1.bandwidthUsageCost + user1.serviceCost)
+const user1Data = user1.diskUsageCost + user1.bandwidthUsageCost + user1.serviceCost;
 
 
 showData.addEventListener('click', function(){
@@ -133,13 +133,13 @@ showData.addEventListener('click', function(){
 
     <div class="storage">
     <b>User Disk Usage</b><br><br>
-    <span>-12656.GB / 38000.GB</span> <br><br>
-    <span>Used Cost: </span>
+    <span>-29,656.GB / 30,000.GB</span> <br><br>
+    <span>Used Cost: ₹${user1.diskUsageCost}</span>
     </div>
     <div class="bandwidth">
     <b>User Bandwidth Usage</b><br><br>
-    <span>-44.56 M / 200000 M</span> <br> <br>
-    <span>Used Cost: </span>
+    <span>-44.56 M / 20000 M</span> <br> <br>
+    <span>Used Cost: ₹${user1.bandwidthUsageCost}</span>
     </div>
     
     </div>
@@ -148,7 +148,9 @@ showData.addEventListener('click', function(){
     <div class="user-cost">
     
 
-    <b> User Total Costs:</b>
+    <b> User Month Costs: <span> ₹${user1Data} </span> </b><br>
+    <b> User Yearly Costs: <span>  </span> </b><br><br>
+    <b> User Total Costs: <span>  </span> </b>
 
 
     </div>
