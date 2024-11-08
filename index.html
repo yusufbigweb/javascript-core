@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 2.0</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .web-services{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+        }
+        .servers{
+            display: flex;
+            gap: 30px;
+
+        }
+        button{
+            padding: 10px;
+            font-size: 15px;
+            text-transform: capitalize;
+            border: none;
+            background-color: #f1f1f1;
+        }
+        button:hover{
+            background-color: #f0f0f0ab;
+        }
+
+        .client-1{
+            padding: 20px;
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+        }
+        .used-data-continer{
+            transition: all ease-in-out 0.3s;
+        }
+        .client-2{
+            padding: 20px;
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+
+        }
+        .client-3{
+            padding: 20px;
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        .record-storage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        
+        }
+        .storage{
+            border: 1px solid gray;
+            text-align: center;
+            padding: 25px 10px;
+        }
+        .bandwidth{
+            border: 1px solid gray;
+            text-align: center;
+            padding: 25px 10px;
+        }
+        .user-cost{
+            border: 1px solid gray;
+            text-align: center;
+            padding: 25px 10px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="web-services">
+        
+        
+        <div class="container">
+            <h2 style="margin: 20px 0; border-bottom: 1px solid gray; padding-bottom: 20px;">Web Services: (Client Record)</h2>
+        <div class="servers">
+            <div class="client-1">
+                <h3>Shaiv:</h3>
+                <span>Price: 1,10,833/month</span>
+                <span><p>Company file management is the process of organizing and storing files in a logical way to improve a business's efficiency and workflow. </p></span>
+                <button class="btn1">show data</button>
+
+                <div class="client-data-used">
+
+                </div>
+
+            </div>
+            <div class="client-2">
+                <h3>Shamu:</h3>
+                <span>Price: 3,01,666/month</span>
+                <span><p>Web server management is the process of maintaining and operating a server to ensure it's running efficiently and securely. </p></span>
+                <button class="btn1">show data</button>
+            </div>
+            <div class="client-3">
+                <h3>Ramu:</h3>
+                <span>Price: 70,416/month</span>
+                <span><p>An employee management system is technology designed to streamline core HR services and improve workforce productivity. </p></span>
+                <button class="btn1">show data</button>
+            </div>
+        </div>
+        </div>
+
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- 
+
+
+storge used - 19 per gb
+user benweet - 8 per user
+cost - 30,000 per month
+
+
+
+-user -1
+30,000GB- ₹47,500
+50,000GB- ₹33,333
+Service Cost- ₹30,000
+Monthy Total cost = 1,10,833
+Yearly Total cost = 13,29,996
+
+
+-user -2
+20,000GB- ₹31,666
+30,000GB- ₹2,40,000
+Service Cost- ₹30,000
+Monthy Total cost = 3,01,666
+Yearly Total cost = 36,19,992
+
+
+-user -3
+15,000GB- ₹23,750
+25,000GB- ₹16,666
+Service Cost- ₹30,000
+Monthy Total cost = 70,416
+Yearly Total cost = 8,44,992
+-->

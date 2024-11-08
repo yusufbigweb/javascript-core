@@ -98,7 +98,64 @@
 // console.log(y === z)//tr
 
 
-if(true){
-    console.log("yusuf")
+const showData = document.querySelector('.btn1');
+const showUserData = document.querySelector('.client-data-used');
+
+const user1 = {
+    diskUsageCost: 47500,
+    bandwidthUsageCost: 33333,
+    serviceCost: 30000
 }
-console.log(yusuf)
+const user2 = {
+    diskUsage: 31666,
+    bandwidthUsage: 240000,
+    serviceCost: 30000
+}
+const user3 = {
+    diskUsage: 23750,
+    bandwidthUsage: 16666,
+    serviceCost: 30000
+}
+
+
+
+console.log(user1.diskUsageCost + user1.bandwidthUsageCost + user1.serviceCost)
+
+
+showData.addEventListener('click', function(){
+    showUserData.innerHTML = `
+
+    <div class="used-data-continer">
+    
+    <h4>User Data:</h4>
+
+    <div class="record-storage">
+
+    <div class="storage">
+    <b>User Disk Usage</b><br><br>
+    <span>-12656.GB / 38000.GB</span> <br><br>
+    <span>Used Cost: </span>
+    </div>
+    <div class="bandwidth">
+    <b>User Bandwidth Usage</b><br><br>
+    <span>-44.56 M / 200000 M</span> <br> <br>
+    <span>Used Cost: </span>
+    </div>
+    
+    </div>
+
+
+    <div class="user-cost">
+    
+
+    <b> User Total Costs:</b>
+
+
+    </div>
+
+
+
+    </div>
+    `
+})
+
