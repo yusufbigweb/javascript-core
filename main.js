@@ -101,3 +101,5 @@
 if(true){
     console.log("yusuf")
 }
+
+console.log(yusuf)
