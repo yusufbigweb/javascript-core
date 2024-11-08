@@ -98,5 +98,6 @@
 // console.log(y === z)//tr
 
 
-
-
+if(true){
+    console.log("yusuf")
+}
