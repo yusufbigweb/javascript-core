@@ -119,8 +119,9 @@ const user3 = {
 
 
 
-const user1Data = user1.diskUsageCost + user1.bandwidthUsageCost + user1.serviceCost;
-
+const monthlyUserData = user1.diskUsageCost + user1.bandwidthUsageCost + user1.serviceCost;
+const yearlyUserData = monthlyUserData * 12;
+const totalUser1Amount = monthlyUserData + yearlyUserData
 
 showData.addEventListener('click', function(){
     showUserData.innerHTML = `
@@ -148,9 +149,9 @@ showData.addEventListener('click', function(){
     <div class="user-cost">
     
 
-    <b> User Month Costs: <span> ₹${user1Data} </span> </b><br>
-    <b> User Yearly Costs: <span>  </span> </b><br><br>
-    <b> User Total Costs: <span>  </span> </b>
+    <b> User Month Costs: <span> ₹${monthlyUserData} </span> </b><br>
+    <b> User Yearly Costs: <span> ₹${yearlyUserData}  </span> </b><br><br>
+    <b> User Total Costs: <span> ₹${totalUser1Amount} </span> </b>
 
 
     </div>
@@ -161,3 +162,102 @@ showData.addEventListener('click', function(){
     `
 })
 
+
+
+// User 2
+
+
+const showData2 = document.querySelector('.btn2');
+const showUserData2 = document.querySelector('.client-data-used2');
+
+const monthlyUserData2 = user2.diskUsage + user2.bandwidthUsage + user2.serviceCost;
+const yearlyUserData2 = monthlyUserData2 * 12;
+const totalUser1Amount2 = monthlyUserData2 + yearlyUserData2
+
+showData2.addEventListener('click', function(){
+    showUserData2.innerHTML = `
+
+    <div class="used-data-continer">
+    
+    <h4>User Data:</h4>
+
+    <div class="record-storage">
+
+    <div class="storage">
+    <b>User Disk Usage</b><br><br>
+    <span>-29,656.GB / 30,000.GB</span> <br><br>
+    <span>Used Cost: ₹${user2.diskUsage}</span>
+    </div>
+    <div class="bandwidth">
+    <b>User Bandwidth Usage</b><br><br>
+    <span>-44.56 M / 20000 M</span> <br> <br>
+    <span>Used Cost: ₹${user2.bandwidthUsage}</span>
+    </div>
+    
+    </div>
+
+
+    <div class="user-cost">
+    
+
+    <b> User Month Costs: <span> ₹${monthlyUserData2} </span> </b><br>
+    <b> User Yearly Costs: <span> ₹${yearlyUserData2}  </span> </b><br><br>
+    <b> User Total Costs: <span> ₹${totalUser1Amount2} </span> </b>
+
+
+    </div>
+
+
+
+    </div>
+    `
+})
+
+// User 3
+
+
+const showData3 = document.querySelector('.btn3');
+const showUserData3 = document.querySelector('.client-data-used3');
+
+const monthlyUserData3 = user3.serviceCost + user3.bandwidthUsage + user3.diskUsage;
+const yearlyUserData3 = monthlyUserData3 * 12;
+const totalUser1Amount3 = monthlyUserData3 + yearlyUserData3
+
+showData3.addEventListener('click', function(){
+    showUserData3.innerHTML = `
+
+    <div class="used-data-continer">
+    
+    <h4>User Data:</h4>
+
+    <div class="record-storage">
+
+    <div class="storage">
+    <b>User Disk Usage</b><br><br>
+    <span>-29,656.GB / 30,000.GB</span> <br><br>
+    <span>Used Cost: ₹${user3.diskUsage}</span>
+    </div>
+    <div class="bandwidth">
+    <b>User Bandwidth Usage</b><br><br>
+    <span>-44.56 M / 20000 M</span> <br> <br>
+    <span>Used Cost: ₹${user3.bandwidthUsage}</span>
+    </div>
+    
+    </div>
+
+
+    <div class="user-cost">
+    
+
+    <b> User Month Costs: <span> ₹${monthlyUserData3} </span> </b><br>
+    <b> User Yearly Costs: <span> ₹${yearlyUserData3}  </span> </b><br><br>
+    <b> User Total Costs: <span> ₹${totalUser1Amount3} </span> </b>
+
+
+    </div>
+
+
+
+    </div>
+    `
+})
