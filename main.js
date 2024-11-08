@@ -253,3 +253,20 @@ closeBtn3.addEventListener('click', function(){
   showUserData3.style.display = "none"
 })
 
+
+
+const userName = document.getElementById('userName');
+const itemPrice = document.getElementById('itemPrice');
+const description = document.getElementById('userDescriptio');
+const submit = document.getElementById('userDataSubmit');
+
+
+
+submit.addEventListener('click', function(){
+  const disckSpace = prompt(`Enter Your Disck Space in form of GB: `);
+  const bandWidth = prompt('Enter Your Brandwidth in form of GB:');
+  let currency = 30000;
+  alert(`Service Cost is Constant: ₹${currency}`)
+
+})
+

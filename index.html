@@ -1,154 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web 2.0</title>
     <style>
-        body{
-            font-family: sans-serif;
-        }
-        .web-services{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            height: 100vh;
-            width: 100%;
-        }
-        .container{
-            width: 80%;
-            margin: auto;
-        }
-        .servers{
-            display: flex;
-            gap: 30px;
+      body {
+        font-family: sans-serif;
+      }
+      .web-services {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+      .servers {
+        display: flex;
+        gap: 30px;
+      }
+      button {
+        padding: 10px;
+        font-size: 15px;
+        text-transform: capitalize;
+        border: none;
+        background-color: #f1f1f1;
+      }
+      button:hover {
+        background-color: #f0f0f0ab;
+      }
 
-        }
-        button{
-            padding: 10px;
-            font-size: 15px;
-            text-transform: capitalize;
-            border: none;
-            background-color: #f1f1f1;
-        }
-        button:hover{
-            background-color: #f0f0f0ab;
-        }
+      .client-1 {
+        padding: 20px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .used-data-continer {
+        transition: all ease-in-out 0.3s;
+      }
+      .client-2 {
+        padding: 20px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .client-3 {
+        padding: 20px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .record-storage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+      .storage {
+        border: 1px solid gray;
+        text-align: center;
+        padding: 25px 10px;
+      }
+      .bandwidth {
+        border: 1px solid gray;
+        text-align: center;
+        padding: 25px 10px;
+      }
+      .user-cost {
+        border: 1px solid gray;
+        text-align: center;
+        padding: 25px 10px;
+        margin-top: 20px;
+      }
+      .haeding4 {
+        margin-top: 40px !important;
+      }
+      .form-datail {
+        background-color: #f1f1f1;
+        padding: 30px;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .form-datail  input {
+        padding: 10px;
+        text-transform: capitalize;
+        border: none;
+      }
+      .dataSubmit{
+        background-color: gray;
+        color: white;
+      }
+      .center-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-        .client-1{
-            padding: 20px;
-    border: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-
-        }
-        .used-data-continer{
-            transition: all ease-in-out 0.3s;
-        }
-        .client-2{
-            padding: 20px;
-    border: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-            
-
-        }
-        .client-3{
-            padding: 20px;
-    border: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-            
-        }
-        .record-storage{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-        
-        }
-        .storage{
-            border: 1px solid gray;
-            text-align: center;
-            padding: 25px 10px;
-        }
-        .bandwidth{
-            border: 1px solid gray;
-            text-align: center;
-            padding: 25px 10px;
-        }
-        .user-cost{
-            border: 1px solid gray;
-            text-align: center;
-            padding: 25px 10px;
-            margin-top: 20px;
-        }
-        .haeding4{
-            margin-top: 40px !important;
-        }
+      }
     </style>
-
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="web-services">
-        
-        
-        <div class="container">
-            <h2 style="margin: 20px 0; border-bottom: 1px solid gray; padding-bottom: 20px;">Web Services: (Client Record)</h2>
+      <div class="container">
+        <h2
+          style="
+            margin: 20px 0;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+          "
+        >
+          Web Services: (Client Record)
+        </h2>
         <div class="servers">
-            <div class="client-1">
-                <h3>Shaiv:</h3>
-                <span>Price: 1,10,833/month</span>
-                <span><p>Company file management is the process of organizing and storing files in a logical way to improve a business's efficiency and workflow. </p></span>
-                <button class="btn1">show data</button>
-                <button class="btn1-close">close</button>
+          <div class="client-1">
+            <h3>Shaiv:</h3>
+            <span>Price: 1,10,833/month</span>
+            <span
+              ><p>
+                Company file management is the process of organizing and storing
+                files in a logical way to improve a business's efficiency and
+                workflow.
+              </p></span
+            >
+            <button class="btn1">show data</button>
+            <button class="btn1-close">close</button>
 
-                <div class="client-data-used">
+            <div class="client-data-used"></div>
+          </div>
+          <div class="client-2">
+            <h3>Shamu:</h3>
+            <span>Price: 3,01,666/month</span>
+            <span
+              ><p>
+                Web server management is the process of maintaining and
+                operating a server to ensure it's running efficiently and
+                securely.
+              </p></span
+            >
+            <button class="btn2">show data</button>
+            <button class="btn2-close">close</button>
 
-                </div>
+            <div class="client-data-used2"></div>
+          </div>
+          <div class="client-3">
+            <h3>Ramu:</h3>
+            <span>Price: 70,416/month</span>
+            <span
+              ><p>
+                An employee management system is technology designed to
+                streamline core HR services and improve workforce productivity.
+              </p></span
+            >
+            <button class="btn3">show data</button>
+            <button class="btn3-close">close</button>
 
-            </div>
-            <div class="client-2">
-                <h3>Shamu:</h3>
-                <span>Price: 3,01,666/month</span>
-                <span><p>Web server management is the process of maintaining and operating a server to ensure it's running efficiently and securely. </p></span>
-                <button class="btn2">show data</button>
-                <button class="btn2-close">close</button>
-
-                <div class="client-data-used2">
-
-
-                </div>
-            </div>
-            <div class="client-3">
-                <h3>Ramu:</h3>
-                <span>Price: 70,416/month</span>
-                <span><p>An employee management system is technology designed to streamline core HR services and improve workforce productivity. </p></span>
-                <button class="btn3">show data</button>
-                <button class="btn3-close">close</button>
-
-                <div class="client-data-used3">
-
-                </div>
-            </div>
+            <div class="client-data-used3"></div>
+          </div>
         </div>
-        </div>
-
+      </div>
     </div>
-<script src="./main.js"></script>
-</body>
+
+    <div class="form-input">
+      <div class="container">
+        <h2
+          style="
+            margin: 20px 0;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+            margin-top: 40px;
+          "
+        >
+          Enter Details: (Form)
+        </h2>
+
+        <div class="center-div">
+        <div class="form-datail">
+          <form>
+            <input required type="text" id="userName" placeholder="Name:" /><br /><br />
+            <input required
+              type="number"
+              id="itemPrice"
+              placeholder="Price:"
+            /><br /><br />
+            <input required
+              type="text"
+              id="userDescriptio"
+              placeholder="Description"
+            /><br /><br />
+            <input type="submit" class="dataSubmit" id="userDataSubmit" value="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
-
-
-
-
-
 
 <!-- 
 
@@ -156,8 +214,6 @@
 storge used - 19 per gb
 user benweet - 8 per user
 cost - 30,000 per month
-
-
 
 -user -1
 30,000GB- ₹47,500
