@@ -32,5 +32,6 @@ console.log(DataTypeNull);
 // let convertStringToNumber = "1212" // this is simple data conversion
 // console.log(typeof convertStringToNumber)
 
+console.log("i'm back :)")
 
 
