@@ -10,18 +10,18 @@
 
 // Primitive - data type
 
-const number = 2121;
-const string = "String";
-const booleanFalse = false;
-const booleanTrue = true;
-const undefind = undefined;
-const DataTypeNull = null;
-console.log(number);
-console.log(string);
-console.log(booleanFalse);
-console.log(booleanTrue);
-console.log(undefind);
-console.log(DataTypeNull);
+// const number = 2121;
+// const string = "String";
+// const booleanFalse = false;
+// const booleanTrue = true;
+// const undefind = undefined;
+// const DataTypeNull = null;
+// console.log(number);
+// console.log(string);
+// console.log(booleanFalse);
+// console.log(booleanTrue);
+// console.log(undefind);
+// console.log(DataTypeNull);
 
 
 
@@ -32,6 +32,9 @@ console.log(DataTypeNull);
 // let convertStringToNumber = "1212" // this is simple data conversion
 // console.log(typeof convertStringToNumber)
 
-console.log("i'm back :)")
+// console.log("i'm back :)")
 
+const arr = [10, 20, 30];
+arr[100] = 40;
 
+console.log(arr.length)
