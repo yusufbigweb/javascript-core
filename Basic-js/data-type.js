@@ -33,8 +33,3 @@
 // console.log(typeof convertStringToNumber)
 
 // console.log("i'm back :)")
-
-const arr = [10, 20, 30];
-arr[100] = 40;
-
-console.log(arr.length)
